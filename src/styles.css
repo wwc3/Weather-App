@@ -1,0 +1,113 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  text-align: center;
+}
+
+h2,
+h3,
+h4,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: black;
+  font-size: 40px;
+  padding: 30px;
+}
+
+h2 {
+  color: blue;
+  font-size: 36px;
+}
+
+h4 {
+  color: grey;
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 18px;
+  color: gray;
+  top: 44px;
+  line-height: 30px;
+}
+
+.btn-primary {
+  color: white;
+  background: blue;
+  font-size: 14px;
+}
+
+.btn-danger {
+  color: white;
+  background: red;
+  font-size: 14px;
+}
+
+.units {
+  position: relative;
+  font-size: 14px;
+  top: -11px;
+  color: red;
+  font-weight: 600;
+}
+
+.temperature {
+  font-size: 32px;
+  color: red;
+  line-height: 32px;
+}
+
+.main {
+  padding: 34px;
+  border: 1px solid gray;
+  background: white;
+  max-width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+
+.city {
+  border: 2px solid blue;
+  border-radius: 40px;
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.high-low {
+  color: red;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.emoji {
+  font-size: 30px;
+}
+
+.five-day {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.col {
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: blue;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
