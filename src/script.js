@@ -54,7 +54,7 @@ function showCity(event) {
       let displayHumidity = document.querySelector("h4");
       let conditions = response.data.weather[0].description;
       let wind = Math.round(response.data.wind.speed);
-      displayHumidity.innerHTML = `${conditions.toUpperCase()} <br> Humidity: ${humidity}% <br> Wind speed: ${wind}km/hr `;
+      displayHumidity.innerHTML = `${conditions} <br> Humidity: ${humidity}% <br> Wind speed: ${wind}km/hr `;
     }
     axios.get(apiUrl).then(showTemperature);
   }
@@ -82,7 +82,8 @@ function showYourLocation(event) {
       let userHumidity = response.data.main.humidity;
       let userCurrentHumidity = document.querySelector("h4");
       let userConditions = response.data.weather[0].description;
-      userCurrentHumidity.innerHTML = `${userConditions.toUpperCase()} <br> Humidity: ${userHumidity}%`;
+      let userWind = Math.round(response.data.wind.speed);
+      userCurrentHumidity.innerHTML = `${userConditions} <br> Humidity: ${userHumidity}% <br> Wind speed: ${userWind} km/hr`;
     }
   }
   navigator.geolocation.getCurrentPosition(showPosition);
