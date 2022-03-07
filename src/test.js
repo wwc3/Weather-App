@@ -53,7 +53,8 @@ function showCity(event) {
       let humidity = response.data.main.humidity;
       let displayHumidity = document.querySelector("h4");
       let conditions = response.data.weather[0].description;
-      let wind = Math.round(response.data.wind.speed);
+      let wind = response.data.main;
+      console.log(wind);
       displayHumidity.innerHTML = `${conditions.toUpperCase()} <br> Humidity: ${humidity}% <br> Wind speed: ${wind}km/hr `;
     }
     axios.get(apiUrl).then(showTemperature);
@@ -74,7 +75,10 @@ function showYourLocation(event) {
 
     function showTemp(response) {
       let h2 = document.querySelector("h2");
+      let test = response.data;
+      console.log(test);
       h2.innerHTML = `${response.data.name}`;
+      let yourCityName = h2.innerHTML;
 
       let userTemp = Math.round(response.data.main.temp);
       let userCurrentTemp = document.querySelector("#temp");
