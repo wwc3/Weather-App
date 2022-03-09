@@ -27,8 +27,7 @@ function formatDate(date) {
 
   return formatDate;
 }
-
-console.log(formatDate(now));
+////
 
 function showCity(event) {
   event.preventDefault();

@@ -24,49 +24,47 @@
     <div class="container">
       <h1>Check the weather</h1>
       <section class="main">
-        <form id="search-city">
-          <input
-            class="city"
-            id="search-input"
-            type="text"
-            autocomplete="off"
-            autofocus="on"
-            placeholder="Enter city (e.g. Rome, Paris, Madrid, etc.)"
-          /><span class="search-field">
-        
+        <form id="enter">
+          <div class="input-group">
+            <input
+              type="text"
+              id="user-answer"
+              type="search"
+              autocomplete="off"
+              autofocus="on"
+              class="form-control"
+              placeholder="Enter city (e.g. Rome, Paris, Madrid, etc.)"
+            />
+            <button class="btn btn-danger" type="submit">Search</button>
+            <button
+              class="btn btn-primary"
+              id="current-location-button"
+              type="button"
+            >
+              Your Location
+            </button>
+          </div>
         </form>
         <br />
 
-        <div class="d-grid gap-2 d-md-block">
-          <center>
-  <button class="btn btn-primary" id="search-button">
-Search
-
-       
-      </center>
-</div>
-  
-          
-      
-       
-
         <br />
-        <h2>PERTH</h2>
-        <h6>
-          <div id="dayandtime">Day time</div>
-        </h6>
+        <h2>CITY</h2>
+        <h6>Day time</h6>
         <h3>
           <div class="float-left">
-            <span class="temperature" id="temp"> 19</span>
+            <span class="temperature" id="temp"> Temperature</span>
             <span class="units"
               ><a href="#" id="celsius">°C</a> |
               <a href="#" id="fahrenheit">°F</a>
             </span>
           </div>
           <div class="temp emoji">🌤️</div>
-    
         </h3>
-        <h4></h4>
+        <h4>
+          <div class="conditions" id="description">Weather Conditions</div>
+          <div id="humidity">Humidity: %</div>
+          <div id="wind">Wind speed: km/hr</div>
+        </h4>
         <section class="five-day">
           <div class="row">
             <div class="col">
@@ -118,8 +116,10 @@ Search
         </section>
       </section>
       <section class="bottom">
-<a href="https://github.com/wwc3/Weather-App" target="_blank">Open-source code</a> by Eva C
-
+        <a href="https://github.com/wwc3/Weather-App" target="_blank"
+          >Open-source code</a
+        >
+        by Eva C
       </section>
     </div>
     <script src="src/script.js"></script>

@@ -45,6 +45,10 @@ h6 {
   line-height: 30px;
 }
 
+.form-control {
+  border-color: blue;
+}
+
 .btn-primary {
   color: white;
   background: blue;
