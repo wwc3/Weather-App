@@ -36,7 +36,7 @@ function displayWeatherCondition(response) {
   ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
   document.querySelector("#wind").innerHTML = `Wind speed: ${Math.round(
     response.data.wind.speed
-  )} km/hr`;
+  )} mph`;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
 
@@ -46,6 +46,7 @@ function displayWeatherCondition(response) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+  fahrenheitTemp = response.data.main.temp;
 }
 
 function searchCity(city) {
@@ -76,17 +77,24 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-//function convertToFahrenheit(event) {
-// event.preventDefault();
-// let temperatureElement = document.querySelector("#temperature");
-//temperatureElement.innerHTML = 66;
-//}
+function showCelsius(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#temp");
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
+  let celsiusTemp = (fahrenheitTemp - 32) * (5 / 9);
+  temperature.innerHTML = Math.round(celsiusTemp);
+}
 
-//function convertToCelsius(event) {
-//event.preventDefault();
-// let temperatureElement = document.querySelector("#temperature");
-//temperatureElement.innerHTML = 19;
-//}
+function showFahrenheit(event) {
+  event.preventDefault();
+  fahrenheitLink.classList.add("active");
+  celsiusLink.classList.remove("active");
+  let temperature = document.querySelector("#temp");
+  temperature.innerHTML = Math.round(fahrenheitTemp);
+}
+
+let fahrenheitTemp = null;
 
 let dateElement = document.querySelector("h6");
 let currentTime = new Date();
@@ -98,4 +106,12 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsius);
+
 searchCity("Stowe");
+
+//bug - default link when doing multiple searches is not F; if C is clicked on, that will still be active when changing cities
