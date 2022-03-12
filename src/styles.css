@@ -32,6 +32,7 @@ h2 {
 h4 {
   color: grey;
   font-size: 18px;
+  margin-bottom: 18px;
 }
 
 h4:first-letter {
@@ -107,28 +108,32 @@ a {
   font-size: 14px;
 }
 
-.high-low {
-  color: red;
-  padding: 10px;
-  font-size: 18px;
-}
-
-.icon {
-  margin: 0px;
-}
-
-.five-day {
+.border {
+  border: 2px solid gray;
+  border-radius: 4px;
   display: block;
   margin: 0 auto;
-  padding: 20px;
 }
 
-.col {
-  border: 1px solid gray;
-  border-radius: 5px;
-  color: blue;
-  font-size: 20px;
+.day {
+  color: black;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+}
+
+.high {
+  color: red;
   padding: 10px;
-  margin: 10px;
-  text-align: center;
+  font-size: 13px;
+}
+
+.low {
+  color: blue;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.bottom {
+  margin-top: 24px;
 }
