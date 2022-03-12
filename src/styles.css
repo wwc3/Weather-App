@@ -1,6 +1,10 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: #3aa5d9;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(149, 219, 254) 0%,
+    rgb(7, 134, 197) 90.1%
+  );
 }
 
 h1,
@@ -21,17 +25,17 @@ h6 {
 
 h1 {
   color: white;
-  font-size: 40px;
+  font-size: 24px;
   padding: 30px;
 }
 
 h2 {
-  color: #edf4f7;
-  font-size: 36px;
+  color: white;
+  font-size: 48px;
 }
 
 h4 {
-  color: grey;
+  color: white;
   font-size: 18px;
   margin-bottom: 18px;
 }
@@ -41,8 +45,9 @@ h4:first-letter {
 }
 
 h6 {
-  font-size: 18px;
-  color: gray;
+  font-size: 15px;
+  font-style: italic;
+  color: rgb(78, 152, 212);
   top: 44px;
   line-height: 30px;
 }
@@ -53,26 +58,15 @@ a {
   color: blue;
 }
 
-.active,
-.active:hover {
-  color: black;
-  cursor: default;
-}
-
-.form-control {
-  border-color: blue;
-}
-
-.btn-primary {
-  color: white;
-  background: blue;
+.btn btn-outline-secondary {
+  color: #226383;
+  border: 1px solid white;
+  background: white;
   font-size: 14px;
 }
 
-.btn-danger {
-  color: white;
-  background: red;
-  font-size: 14px;
+.city-icon {
+  padding: 25px;
 }
 
 .units {
@@ -86,13 +80,20 @@ a {
 
 .temperature {
   font-size: 32px;
-  color: red;
+  color: #d64d2a;
   line-height: 32px;
+}
+
+.search {
+  background: white;
+  border: 1px solid gray;
+  border-radius: 7px;
 }
 
 .main {
   padding: 34px;
-  border: 1px solid gray;
+  border: 1px solid #226383;
+  border-radius: 4px;
   background: radial-gradient(
     circle at 10% 20%,
     rgb(149, 219, 254) 0%,
@@ -101,42 +102,40 @@ a {
   max-width: 95%;
   margin: 0 auto;
   display: block;
-}
-
-.city {
-  border: 2px solid blue;
-  border-radius: 40px;
-  width: 85%;
-  display: block;
-  margin: 0 auto;
-  padding: 8px;
-  font-size: 14px;
+  box-shadow: 3px 4px 4px #226383;
 }
 
 .border {
+  background: #3aa5d9;
   border: 2px solid gray;
   border-radius: 4px;
   display: block;
   margin: 0 auto;
+  box-shadow: 3px 4px 4px #226383;
+}
+
+.border:hover {
+  background: #0887c5;
+}
+
+a {
+  color: white;
 }
 
 .day {
-  color: black;
+  color: #d64d2a;
+  font-weight: 500;
   font-size: 18px;
   display: block;
   margin: 0 auto;
+  background: white;
 }
 
-.high {
-  color: red;
-  padding: 10px;
-  font-size: 13px;
-}
-
+.high,
 .low {
-  color: blue;
+  color: white;
   padding: 10px;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .bottom {

@@ -50,7 +50,7 @@ function displayForecast(response) {
        </div>
          <img src="http://openweathermap.org/img/wn/${
            forecastDay.weather[0].icon
-         }@2x.png" alt="" width="42" />
+         }@2x.png" alt="" width="56" />
          
     
        <div class="low">
@@ -76,9 +76,9 @@ function displayWeatherCondition(response) {
   document.querySelector("h2").innerHTML = response.data.name
     .trim()
     .toUpperCase();
-  document.querySelector("#temp").innerHTML = Math.round(
+  document.querySelector("#temp").innerHTML = `${Math.round(
     response.data.main.temp
-  );
+  )}`;
 
   document.querySelector(
     "#humidity"
