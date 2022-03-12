@@ -95,7 +95,6 @@ function displayWeatherCondition(response) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
-  fahrenheitTemp = response.data.main.temp;
   getForecast(response.data.coord);
 }
 
@@ -127,24 +126,11 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function showCelsius(event) {
-  event.preventDefault();
-  let temperature = document.querySelector("#temp");
-  fahrenheitLink.classList.remove("active");
-  celsiusLink.classList.add("active");
-  let celsiusTemp = (fahrenheitTemp - 32) * (5 / 9);
-  temperature.innerHTML = Math.round(celsiusTemp);
-}
-
 function showFahrenheit(event) {
   event.preventDefault();
-  fahrenheitLink.classList.add("active");
-  celsiusLink.classList.remove("active");
   let temperature = document.querySelector("#temp");
   temperature.innerHTML = Math.round(fahrenheitTemp);
 }
-
-let fahrenheitTemp = null;
 
 let dateElement = document.querySelector("h6");
 let currentTime = new Date();
@@ -155,12 +141,6 @@ searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", showFahrenheit);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", showCelsius);
 
 searchCity("Stowe");
 
