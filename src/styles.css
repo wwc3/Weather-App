@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  background: #3aa5d9;
 }
 
 h1,
@@ -19,13 +20,13 @@ h6 {
 }
 
 h1 {
-  color: black;
+  color: white;
   font-size: 40px;
   padding: 30px;
 }
 
 h2 {
-  color: blue;
+  color: #edf4f7;
   font-size: 36px;
 }
 
@@ -92,7 +93,11 @@ a {
 .main {
   padding: 34px;
   border: 1px solid gray;
-  background: white;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(149, 219, 254) 0%,
+    rgb(7, 134, 197) 90.1%
+  );
   max-width: 95%;
   margin: 0 auto;
   display: block;
