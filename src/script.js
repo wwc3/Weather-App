@@ -94,6 +94,26 @@ function showFahrenheit(event) {
   temperature.innerHTML = Math.round(fahrenheitTemp);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col">
+     ${day}
+     <div class="high-low">
+       H: 80° F<div class="emoji">🌧️</div>
+       L: 65°F
+     </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let fahrenheitTemp = null;
 
 let dateElement = document.querySelector("h6");
@@ -113,5 +133,6 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsius);
 
 searchCity("Stowe");
+displayForecast();
 
 //bug - default link when doing multiple searches is not F; if C is clicked on, that will still be active when changing cities
