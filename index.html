@@ -49,46 +49,33 @@ Current location
 
 
     <section class="main">
-       
 
-       
-     
-  
-      
-        <section class="city-icon">
-          <div class="container">
-          <div class="row">
-            <div class="col-6">
-              
+<div class="current">
+              <div class="city-name">
         <h2>CITY</h2>
-        <h6>Day time</h6>
-        <h3>
-          <div class="float-left">
-            <span class="temperature" id="temp"> Temperature</span>
-            <span class="units"
-              >°F
-            </span>
-          </div>
-          <div class="weather-pic">
-            <img src="" id="icon" class="icon" />
-          </div>
-         
-        </h3>
-       
-        </div>
+<h6>Day time</h6>
+              
+<h3>
         
-      <div class="col-2">
-        <div class="weather-details">
-        <h4>
-          <div class="conditions" id="description">Weather Conditions</div>
-          <div id="humidity">Humidity: %</div>
-          <div id="wind">Wind speed: mph</div>
-          
-        </h4>
-      </div>
-      </div>
+            <div class="temperature" id="temp"></div>
+            
+            <div id="feels" class="feels">
+
+            </div>
+            <span class="image">
+            <img src="" id="icon" class="icon" width="34"/></span>
+            <span class="conditions" id="description">Weather Conditions</span>
+            
+            <div id="humidity" class="humidity">Humidity: %</div>
+       <div id="wind" class="wind">Wind speed: mph</div>
+          </div>
+          </h3>
+            
+  
+    
+         
+     
     </div>
-  </section>
         <br />
         <section class="daily-forecast">
           <div id="grid"></div>
@@ -102,7 +89,7 @@ Current location
           by Eva C
         </center>
       </section>
-    </div>
+    </div></div>
   </section>
     <script src="src/script.js"></script>
   </body>

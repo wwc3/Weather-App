@@ -73,12 +73,17 @@ function getForecast(coordinates) {
 }
 
 function displayWeatherCondition(response) {
+  console.log(response.data);
   document.querySelector("h2").innerHTML = response.data.name
     .trim()
     .toUpperCase();
+  document.querySelector("#feels").innerHTML = `Feels like ${Math.round(
+    response.data.main.feels_like
+  )}° F`;
+
   document.querySelector("#temp").innerHTML = `${Math.round(
     response.data.main.temp
-  )}`;
+  )}° F`;
 
   document.querySelector(
     "#humidity"
@@ -87,7 +92,7 @@ function displayWeatherCondition(response) {
     response.data.wind.speed
   )} mph`;
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].description;
+    response.data.weather[0].main;
 
   document
     .querySelector("#icon")

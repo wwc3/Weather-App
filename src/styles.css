@@ -31,26 +31,41 @@ h1 {
 }
 
 h2 {
-  color: white;
-  font-size: 48px;
+  color: #3aa5d9;
+  font-size: 54px;
 }
-
 h4 {
   color: white;
   font-size: 18px;
   margin-bottom: 18px;
 }
 
-h4:first-letter {
-  text-transform: uppercase;
-}
-
 h6 {
   font-size: 15px;
   font-style: italic;
-  color: rgb(78, 152, 212);
-  top: 44px;
-  line-height: 30px;
+  color: #aa796c;
+}
+
+.current {
+  background: white;
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #0887c5;
+  border-radius: 14px;
+  box-shadow: 3px 4px 4px #226383;
+  padding: 12px;
+}
+
+.humidity,
+.wind {
+  color: #226383;
+  font-size: 15px;
+}
+
+.feels {
+  color: #226383;
+  font-size: 12px;
 }
 
 .enter {
@@ -66,6 +81,12 @@ h6 {
 .enter:hover {
   background: white;
   color: #226383;
+}
+
+.conditions {
+  color: #0887c5;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 .location {
@@ -102,9 +123,9 @@ h6 {
 }
 
 .temperature {
-  font-size: 32px;
+  font-size: 45px;
   color: #d64d2a;
-  line-height: 32px;
+  padding: 3px;
 }
 
 .form-control {
@@ -120,7 +141,6 @@ h6 {
 }
 
 .main {
-  padding: 34px;
   border: 1px solid #226383;
   border-radius: 4px;
   background: radial-gradient(
@@ -131,6 +151,7 @@ h6 {
   max-width: 95%;
   margin: 0 auto;
   display: block;
+  padding: 15px;
   box-shadow: 3px 4px 4px #226383;
 }
 
@@ -139,6 +160,15 @@ h6 {
   max-width: 90%;
   margin: 0 auto;
   display: block;
+}
+
+.col {
+  color: #0887c5;
+  font-size: 35px;
+
+  text-align: left;
+
+  border-radius: 4px;
 }
 
 .border {
@@ -176,4 +206,5 @@ a {
 
 .bottom {
   margin-top: 24px;
+  color: #226383;
 }
