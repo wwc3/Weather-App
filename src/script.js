@@ -139,7 +139,7 @@ dateElement.innerHTML = formatDate(currentTime);
 let searchForm = document.querySelector("#enter");
 searchForm.addEventListener("submit", handleSubmit);
 
-let currentLocationButton = document.querySelector("#current-location-button");
+let currentLocationButton = document.querySelector("#your-location");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Stowe");

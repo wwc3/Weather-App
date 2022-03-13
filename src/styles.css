@@ -26,7 +26,8 @@ h6 {
 h1 {
   color: white;
   font-size: 24px;
-  padding: 30px;
+  padding: 15px;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -52,17 +53,34 @@ h6 {
   line-height: 30px;
 }
 
-a {
-  text-decoration: none;
-  font-weight: none;
-  color: blue;
+.enter {
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  background: #0887c5;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
 }
 
-.btn btn-outline-secondary {
-  color: #226383;
-  border: 1px solid white;
+.enter:hover {
   background: white;
+  color: #226383;
+}
+
+.location {
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  background: #d64d2a;
   font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+
+.location:hover {
+  background: white;
+  color: #d64d2a;
 }
 
 .city-icon {
@@ -78,16 +96,27 @@ a {
   text-decoration: none;
 }
 
+.d-grid gap-2 d-md-block {
+  display: block;
+  margin: 0 auto;
+}
+
 .temperature {
   font-size: 32px;
   color: #d64d2a;
   line-height: 32px;
 }
 
-.search {
+.form-control {
   background: white;
-  border: 1px solid gray;
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #226383;
   border-radius: 7px;
+  color: white;
+  font-size: 14px;
+  padding: 10px;
 }
 
 .main {
@@ -103,6 +132,13 @@ a {
   margin: 0 auto;
   display: block;
   box-shadow: 3px 4px 4px #226383;
+}
+
+.search {
+  padding: 30px;
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
 }
 
 .border {

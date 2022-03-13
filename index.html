@@ -21,35 +21,38 @@
     />
   </head>
   <body>
-    <div class="container">
+   <div class="container">
       <h1>Check the weather</h1>
+<div class="search">
+           <form id="enter">
+             <div class="input-group">
+          <input
+            class="form-control"
+            id="user-answer"
+            type="text"
+            autocomplete="off"
+            autofocus="on"
+            placeholder="Enter city (e.g. Rome, Paris, Madrid, etc.)"
+          />
+      
+  <button class="btn btn-outline-secondary enter" id="search-button" type="submit">
+Search
 
-      <div class="search">
-        <form id="enter">
-          <div class="input-group">
-            <input
-              type="text"
-              id="user-answer"
-              type="search"
-              autocomplete="off"
-              autofocus="on"
-              class="form-control"
-              placeholder="Enter city (e.g. Rome, Paris, Madrid, etc.)"
-            />
-            <button class="btn btn-outline-secondary" type="submit">Search</button>
-            <button
-              class="btn btn-outline-secondary btn"
-              id="current-location-button"
-              type="button"
-            >
-              Your Location
-            </button>
-          </div>
-        </form>
-        </div>
-        <br />
-        <br />
-      <section class="main">
+        </button>
+   <button class="btn btn-outline-secondary location" id="your-location" type="button">
+Current location
+
+        </button>
+      </div>
+    </form>
+</div>
+
+
+    <section class="main">
+       
+
+       
+     
   
       
         <section class="city-icon">
@@ -100,6 +103,7 @@
         </center>
       </section>
     </div>
+  </section>
     <script src="src/script.js"></script>
   </body>
 </html>
