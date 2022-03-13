@@ -93,7 +93,7 @@ hr {
   background: white;
   border: 1px solid #226383;
   border-radius: 5px;
-  width: 100%;
+  max-width: 500px;
   margin-bottom: 20px;
 }
 
@@ -184,37 +184,57 @@ a {
   display: block;
 }
 
-.day {
-  padding: 5px;
-  color: #226383;
-
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0;
+.five-day {
+  display: block;
+  margin: 0 auto;
+  max-width: 515px;
 }
 
-.five-day {
-  color: white;
-  font-weight: 500;
+.day,
+.image {
+  padding: 5px;
+  color: #226383;
+  text-align: center;
   font-size: 18px;
-
   font-weight: 500;
+  margin: 0 auto;
+  display: block;
+}
+
+.forecasting:hover {
+  color: white;
+}
+
+.around {
+  border: 1px solid #226383;
+  border-radius: 5px;
+  box-shadow: 3px 4px 4px #226383;
+  max-width: 88px;
   background: radial-gradient(
     circle at 10% 20%,
     rgb(149, 219, 254) 0%,
     rgb(7, 134, 197) 90.1%
   );
-  padding: 10px;
-  border: 1px solid #226383;
-  border-radius: 5px;
-  box-shadow: 3px 4px 4px #226383;
+  display: block;
+  margin: 0 auto;
+}
+
+.around:hover {
+  background: #226383;
+  color: white;
 }
 
 .high,
 .low {
   color: white;
-  padding: 10px;
-  font-size: 15px;
+  padding: 9px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.range {
+  display: block;
+  margin: 0 auto;
 }
 
 .bottom {
