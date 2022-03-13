@@ -1,10 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(149, 219, 254) 0%,
-    rgb(7, 134, 197) 90.1%
-  );
+  background: #0887c5;
 }
 
 h1,
@@ -31,7 +27,7 @@ h1 {
 }
 
 h2 {
-  color: #3aa5d9;
+  color: white;
   font-size: 54px;
 }
 h4 {
@@ -47,13 +43,21 @@ h6 {
 }
 
 .current {
-  background: white;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(149, 219, 254) 0%,
+    rgb(7, 134, 197) 90.1%
+  );
   display: block;
   margin: 0 auto;
   border: 1px solid #0887c5;
   border-radius: 14px;
   box-shadow: 3px 4px 4px #226383;
   padding: 12px;
+}
+
+.col-sm-10 {
+  margin: 15px;
 }
 
 .humidity,
@@ -120,7 +124,6 @@ h6 {
 
 .form-control {
   background: white;
-  width: 100%;
   margin: 0 auto;
   display: block;
   border: 1px solid #226383;
@@ -128,6 +131,11 @@ h6 {
   color: white;
   font-size: 14px;
   padding: 10px;
+}
+
+.col-auto {
+  display: block;
+  margin: 0 auto;
 }
 
 .main {
