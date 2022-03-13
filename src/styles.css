@@ -36,7 +36,12 @@ h1 {
 h2 {
   color: white;
   font-size: 45px;
+  padding: 5px;
+  color: white;
+  margin: 0 auto;
+  display: block;
 }
+
 h4 {
   color: white;
   font-size: 18px;
@@ -129,14 +134,20 @@ h6 {
 }
 
 .day {
-  padding: 5px;
-  color: #c24829;
+  padding: 1px;
+  color: white;
+  background: #0887c5;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
+  border-radius: 4px;
   margin: 0 auto;
   display: block;
+  max-width: 40px;
 }
+
+margin: 0 auto;
+display: block;
 
 .enter {
   font-size: 14px;
@@ -233,6 +244,10 @@ h6 {
   padding: 15px;
 }
 
+.pic {
+  margin-bottom: 0;
+}
+
 .range {
   display: block;
   margin: 0 auto;
@@ -246,8 +261,10 @@ h6 {
 }
 
 .temperature {
-  font-size: 40px;
+  font-size: 35px;
+  padding: 5px;
   color: #c24829;
-  padding: 3px;
-  margin-bottom: 0;
+
+  margin: 0 auto;
+  display: block;
 }

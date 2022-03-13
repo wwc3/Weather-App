@@ -50,7 +50,7 @@ function displayForecast(response) {
     <span class="image"><center>
      <img src="http://openweathermap.org/img/wn/${
        forecastDay.weather[0].icon
-     }@2x.png" alt="" width="45" />
+     }@2x.png" alt="" width="43" />
      
      </center>
     </span>
