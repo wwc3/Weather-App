@@ -194,8 +194,13 @@ h6 {
 
 .humidity,
 .wind {
-  color: #226383;
+  color: #8ed9ff;
   font-size: 15px;
+}
+
+.humidity-label,
+.wind-label {
+  color: #226383;
 }
 
 .image {
