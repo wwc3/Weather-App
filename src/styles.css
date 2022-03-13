@@ -57,7 +57,7 @@ h6 {
 }
 
 .col-sm-10 {
-  margin: 15px;
+  margin-top: 10px;
 }
 
 .humidity,
@@ -152,15 +152,6 @@ h6 {
   display: block;
 }
 
-.col {
-  color: #0887c5;
-  font-size: 35px;
-
-  text-align: left;
-
-  border-radius: 4px;
-}
-
 .border {
   background: #3aa5d9;
   border: 2px solid gray;
@@ -179,12 +170,19 @@ a {
 }
 
 .day {
-  color: #d64d2a;
+  color: #226383;
   font-weight: 500;
   font-size: 18px;
-  display: block;
-  margin: 0 auto;
-  background: white;
+
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(149, 219, 254) 0%,
+    rgb(7, 134, 197) 90.1%
+  );
+  padding: 10px;
+  border: 1px solid #226383;
+  border-radius: 4px;
+  box-shadow: 3px 4px 4px #226383;
 }
 
 .high,
