@@ -24,8 +24,8 @@
    <div class="container">
       <h1>Check the weather</h1>
 <div class="search">
-           <form id="enter">
-             <div class="input-group">
+           <form id="enter" class="row g-2">
+             <div class="col-auto">
           <input
             class="form-control"
             id="user-answer"
@@ -34,8 +34,9 @@
             autofocus="on"
             placeholder="Enter city (e.g. Rome, Paris, Madrid, etc.)"
           />
-      
-  <button class="btn btn-outline-secondary enter" id="search-button" type="submit">
+          </div>
+      <div class="col-auto">
+  <button class="btn btn-outline-secondary gap-2 enter" id="search-button" type="submit">
 Search
 
         </button>
@@ -43,6 +44,7 @@ Search
 Current location
 
         </button>
+      </div>
       </div>
     </form>
 </div>
