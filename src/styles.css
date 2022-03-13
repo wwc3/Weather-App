@@ -224,8 +224,7 @@ a {
   color: white;
 }
 
-.high,
-.low {
+.high-low {
   color: white;
   padding: 9px;
   font-size: 12px;

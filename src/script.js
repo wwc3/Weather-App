@@ -53,16 +53,15 @@ function displayForecast(response) {
      }@2x.png" alt="" width="56" />
     </span>
     
-   <span class="high">
-     
+ <span class="high-low">
+     <center>
        H: ${Math.round(forecastDay.temp.max)}° F
-     
-      </span>
-    <span class="low">
-   <center>
+  <br />
+   
+ 
        L: ${Math.round(forecastDay.temp.min)}° F
-       </center>
-   </span>
+ </center>
+ </span>
    
     
 </span>
