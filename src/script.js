@@ -57,11 +57,15 @@ function displayForecast(response) {
     
  <span class="high-low">
      <center>
-       <span class="high">H: </span>${Math.round(forecastDay.temp.max)}° F
+       <span class="high">H: </span>${Math.round(
+         forecastDay.temp.max
+       )}° <span class="fahrenheit-label">F</span>
   <br />
    
  
-       <span class="low">L: </span>${Math.round(forecastDay.temp.min)}° F
+       <span class="low">L: </span>${Math.round(
+         forecastDay.temp.min
+       )}° <span class="fahrenheit-label">F</span>
  </center>
  
  </span>
