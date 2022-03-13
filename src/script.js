@@ -82,7 +82,6 @@ function getForecast(coordinates) {
 }
 
 function displayWeatherCondition(response) {
-  console.log(response.data);
   document.querySelector("h2").innerHTML = response.data.name
     .trim()
     .toUpperCase();
