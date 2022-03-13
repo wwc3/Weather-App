@@ -47,20 +47,23 @@ function displayForecast(response) {
        
      ${formatDay(forecastDay.dt)} 
     </span>
-    <span class="image">
+    <span class="image"><center>
      <img src="http://openweathermap.org/img/wn/${
        forecastDay.weather[0].icon
-     }@2x.png" alt="" width="56" />
+     }@2x.png" alt="" width="45" />
+     
+     </center>
     </span>
     
  <span class="high-low">
      <center>
-       H: ${Math.round(forecastDay.temp.max)}° F
+       <span class="high">H: </span>${Math.round(forecastDay.temp.max)}° F
   <br />
    
  
-       L: ${Math.round(forecastDay.temp.min)}° F
+       <span class="low">L: </span>${Math.round(forecastDay.temp.min)}° F
  </center>
+ 
  </span>
    
     

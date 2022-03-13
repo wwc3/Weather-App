@@ -152,6 +152,12 @@ h6 {
   max-width: 340px;
 }
 
+.forecasting {
+  display: block;
+  margin: 0 auto;
+  margin: 0 0 4px 0;
+}
+
 .form-control {
   font-size: 12px;
 }
@@ -172,15 +178,29 @@ h6 {
 
 .high-low {
   color: white;
-  padding: 9px;
-  font-size: 12px;
+  font-size: 11px;
   text-align: center;
+}
+
+.high {
+  color: #c24829;
+  font-size: 12px;
+}
+
+.low {
+  color: #226383;
+  font-size: 12px;
 }
 
 .humidity,
 .wind {
   color: #226383;
   font-size: 15px;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
 }
 
 .location {
