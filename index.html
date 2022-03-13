@@ -23,10 +23,11 @@
   <body>
    <div class="container">
       <h1>Check the weather</h1>
-<div class="search">
-           <form id="enter" class="mb-3 row">
-             <div class="col-sm-10">
-          <input
+      <div class="search">
+      <form id="enter">
+
+   <div class="input-group">
+     <input
             class="form-control"
             id="user-answer"
             type="text"
@@ -34,23 +35,22 @@
             autofocus="on"
             placeholder="Enter city (e.g. Rome, Paris, etc.)"
           />
-          </div>
-      <div class="col-sm-10">
-        <center>
-  <button class="btn btn-outline-secondary gap-2 enter" id="search-button" type="submit">
-Search
+         
+  <button class="d-grid gap-2 d-md-block glass" id="search-button" type="submit"> 
+🔎
+        
+   <button class="d-grid gap-2 d-md-block location" id="your-location" type="button">
+📍Your location
 
         </button>
-   <button class="btn btn-outline-secondary location" id="your-location" type="button">
-Current location
-
-        </button></center>
+       
       </div>
-      </div>
-    </form>
-</div>
+    
 
 
+  
+ </form>
+ </div>
     <section class="main">
 
 <div class="current">

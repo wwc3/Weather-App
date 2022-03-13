@@ -35,7 +35,7 @@ h1 {
 
 h2 {
   color: white;
-  font-size: 54px;
+  font-size: 45px;
 }
 h4 {
   color: white;
@@ -128,10 +128,9 @@ h6 {
   display: block;
 }
 
-.day,
-.image {
+.day {
   padding: 5px;
-  color: #226383;
+  color: #c24829;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
@@ -140,19 +139,7 @@ h6 {
 }
 
 .enter {
-  color: white;
-  border: 1px solid white;
-  border-radius: 4px;
-  background: #0887c5;
   font-size: 14px;
-  padding: 10px;
-  text-align: center;
-  margin-top: 12px;
-}
-
-.enter:hover {
-  background: white;
-  color: #226383;
 }
 
 .feels {
@@ -166,22 +153,19 @@ h6 {
   max-width: 515px;
 }
 
-.form-control {
-  background: white;
-  border: 1px solid #226383;
-  border-radius: 5px;
-  max-width: 500px;
-  margin-bottom: 20px;
+.glass {
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  background: #8ed9ff;
+
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
 }
 
-.form-control {
+.glass:hover {
   background: white;
-  margin: 0 auto;
-  display: block;
-  border: 1px solid #226383;
-  border-radius: 7px;
-  font-size: 11px;
-  padding: 10px;
 }
 
 .high-low {
@@ -199,18 +183,19 @@ h6 {
 
 .location {
   color: white;
+  background: #226383;
+
   border: 1px solid white;
   border-radius: 4px;
-  background: #d64d2a;
-  font-size: 14px;
+  font-size: 12px;
   padding: 10px;
   text-align: center;
-  margin-top: 12px;
+  font-weight: 600;
 }
 
 .location:hover {
   background: white;
-  color: #d64d2a;
+  color: #226383;
 }
 
 .main {
@@ -228,10 +213,11 @@ h6 {
 .search {
   padding: 5px;
   margin: 0 auto;
+  display: block;
 }
 
 .temperature {
-  font-size: 45px;
+  font-size: 40px;
   color: #c24829;
   padding: 3px;
 }
