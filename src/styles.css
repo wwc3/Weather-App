@@ -157,6 +157,12 @@ a {
   color: white;
 }
 
+.col-2,
+.col-3 {
+  margin: 0 auto;
+  display: block;
+}
+
 .current {
   background: radial-gradient(
     circle at 10% 20%,
@@ -169,6 +175,13 @@ a {
   border-radius: 14px;
   box-shadow: 3px 4px 4px #226383;
   padding: 12px;
+  max-width: 300px;
+}
+
+.daily-forecast {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
 }
 
 .day {
