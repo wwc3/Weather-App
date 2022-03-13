@@ -77,9 +77,6 @@ function displayWeatherCondition(response) {
   document.querySelector("h2").innerHTML = response.data.name
     .trim()
     .toUpperCase();
-  document.querySelector("#feels").innerHTML = `Feels like ${Math.round(
-    response.data.main.feels_like
-  )}° F`;
 
   document.querySelector("#temp").innerHTML = `${Math.round(
     response.data.main.temp
@@ -88,7 +85,7 @@ function displayWeatherCondition(response) {
   document.querySelector(
     "#humidity"
   ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
-  document.querySelector("#wind").innerHTML = `Wind speed: ${Math.round(
+  document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
     response.data.wind.speed
   )} mph`;
   document.querySelector("#description").innerHTML =
