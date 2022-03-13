@@ -23,7 +23,6 @@ h1 {
   color: white;
   font-size: 24px;
   padding: 15px;
-  margin-bottom: 0;
 }
 
 h2 {
@@ -65,6 +64,7 @@ hr {
   font-size: 14px;
   padding: 10px;
   text-align: center;
+  margin-top: 12px;
 }
 
 .enter:hover {
@@ -86,6 +86,15 @@ hr {
   font-size: 14px;
   padding: 10px;
   text-align: center;
+  margin-top: 12px;
+}
+
+.form-control {
+  background: white;
+  border: 1px solid #226383;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .location:hover {
@@ -127,10 +136,8 @@ hr {
 }
 
 .search {
-  padding: 30px;
-  max-width: 90%;
+  padding: 5px;
   margin: 0 auto;
-  display: block;
 }
 
 .border {
@@ -186,7 +193,7 @@ a {
   );
   padding: 10px;
   border: 1px solid #226383;
-  border-radius: 2px;
+  border-radius: 5px;
   box-shadow: 3px 4px 4px #226383;
 }
 
