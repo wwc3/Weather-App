@@ -42,18 +42,35 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-        <div class="col">
+        <div class="row">
+         <div class="col">
         <div class="day">
-     ${formatDay(forecastDay.dt)}: 
+       
+        
+     ${formatDay(forecastDay.dt)} 
+     </div>
+     </div>
+     </div>
+     <div>
+     <div class="row">
+     
+     <div class="col">
+     
 <img src="http://openweathermap.org/img/wn/${
           forecastDay.weather[0].icon
         }@2x.png" alt="" width="56" />
-  
-       H: ${Math.round(forecastDay.temp.max)}° F | 
+  </div>
+  <div class="col">
+  <div class="row">
+       H: ${Math.round(forecastDay.temp.max)}° F
+       </div>
+       <div class="row">
       
        L: ${Math.round(forecastDay.temp.min)}° F
     </div>
-     </div>
+    </div>
+</div>
+  
      `;
     }
   });
