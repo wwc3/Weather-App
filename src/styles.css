@@ -39,7 +39,7 @@ h4 {
 h6 {
   font-size: 15px;
   font-style: italic;
-  color: #aa796c;
+  color: #226383;
 }
 
 hr {
@@ -73,7 +73,7 @@ hr {
 }
 
 .conditions {
-  color: #0887c5;
+  color: white;
   font-size: 18px;
   line-height: 32px;
 }
@@ -104,7 +104,7 @@ hr {
 
 .temperature {
   font-size: 45px;
-  color: #d64d2a;
+  color: #c24829;
   padding: 3px;
 }
 
