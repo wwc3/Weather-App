@@ -42,6 +42,10 @@ h6 {
   color: #aa796c;
 }
 
+hr {
+  color: #226383;
+}
+
 .humidity,
 .wind {
   color: #226383;
@@ -161,7 +165,6 @@ a {
 }
 
 .day {
-  background: white;
   padding: 5px;
   color: #226383;
 
