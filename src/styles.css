@@ -35,8 +35,8 @@ h1 {
 
 h2 {
   color: white;
-  font-size: 45px;
-  padding: 5px;
+  font-size: 37px;
+  padding: 3px;
   color: white;
   margin: 0 auto;
   display: block;
@@ -119,7 +119,7 @@ h6 {
   border-radius: 14px;
   box-shadow: 3px 4px 4px #226383;
   padding: 12px;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .d-grid gap-2 d-md-block {
@@ -222,8 +222,7 @@ display: block;
 
 .location {
   color: white;
-  background: #226383;
-
+  background: #c24829;
   border: 1px solid white;
   border-radius: 4px;
   font-size: 12px;
@@ -234,7 +233,7 @@ display: block;
 
 .location:hover {
   background: white;
-  color: #226383;
+  color: #c24829;
 }
 
 .main {

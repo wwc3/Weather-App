@@ -157,6 +157,6 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#your-location");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("Stowe");
+searchCity("Salt Lake City");
 
 //bug - default link when doing multiple searches is not F; if C is clicked on, that will still be active when changing cities
