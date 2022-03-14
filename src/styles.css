@@ -15,14 +15,14 @@ h1,
 h2,
 h3,
 h4,
-h6 {
+h5 {
   text-align: center;
 }
 
 h2,
 h3,
 h4,
-h6 {
+h5 {
   padding: 0;
   margin: 0;
 }
@@ -55,12 +55,6 @@ h5 {
   text-align: center;
 }
 
-h6 {
-  font-size: 15px;
-  font-style: italic;
-  color: #226383;
-}
-
 .around {
   border: 1px solid #226383;
   border-radius: 5px;
@@ -81,32 +75,9 @@ h6 {
   color: white;
 }
 
-.border {
-  background: #3aa5d9;
-  border: 2px solid gray;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 3px 4px 4px #226383;
-}
-
-.border:hover {
-  background: #0887c5;
-}
-
 .bottom {
   margin-top: 24px;
   color: #8ed9ff;
-}
-
-.city-icon {
-  padding: 25px;
-}
-
-.col-2,
-.col-3 {
-  margin: 0 auto;
-  display: block;
 }
 
 .conditions {
@@ -129,17 +100,6 @@ h6 {
   max-width: 350px;
 }
 
-.d-grid gap-2 d-md-block {
-  display: block;
-  margin: 0 auto;
-}
-
-.daily-forecast {
-  max-width: 600px;
-  margin: 0 auto;
-  display: block;
-}
-
 .day {
   padding: 1px;
   color: white;
@@ -153,16 +113,8 @@ h6 {
   max-width: 40px;
 }
 
-margin: 0 auto;
-display: block;
-
 .enter {
   font-size: 14px;
-}
-
-.feels {
-  color: #226383;
-  font-size: 12px;
 }
 
 .five-day {
@@ -252,11 +204,6 @@ display: block;
 
 .pic {
   margin-bottom: 0;
-}
-
-.range {
-  display: block;
-  margin: 0 auto;
 }
 
 .search {

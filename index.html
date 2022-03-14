@@ -21,89 +21,79 @@
     />
   </head>
   <body>
-   <div class="container">
-     <br />
+    <div class="container">
+      <br />
       <h1>Check the weather</h1>
-    
-      <h4>Your current day & time: 
-<span id="day-time"></span>
 
+      <h4>
+        Your current day & time:
+        <span id="day-time"></span>
       </h4>
       <h5>Type a city and its 2-letter country abbreviation below:</h5>
       <div class="search">
-        
-      <form id="enter">
+        <form id="enter">
+          <div class="input-group">
+            <input
+              class="form-control"
+              id="user-answer"
+              type="text"
+              autocomplete="off"
+              autofocus="on"
+              placeholder="ex: Rome, IT"
+            />
 
-   <div class="input-group">
-    
-      
-     <input
-            class="form-control"
-            id="user-answer"
-            type="text"
-            autocomplete="off"
-            autofocus="on"
-            placeholder="ex: Rome, IT"
-          />
-        
-      
-  <button class="btn btn-outline-secondary gap-2 glass" id="search-button" type="submit"> 
-🔎
-        </button>
-             
-   <button class="btn btn-outline-secondary location" id="your-location" type="button">
-📍Your location
+            <button
+              class="btn btn-outline-secondary gap-2 glass"
+              id="search-button"
+              type="submit"
+            >
+              🔎
+            </button>
 
-        </button>
-
-      </div>
-    
-
-
-  </div>
- </form>
- 
- </div>
-    <section class="main">
-
-<div class="current">
-        <h2></h2>
-
-<h3>
-  <div>
-        <span class="right">
-            <strong class="temperature" id="temp"></strong></span>
-            <span class="units">°F
-        </span>
-      </div>
-
-
-<div class="weather-info">
-
-           
-            <span class="pic">
-            <img src="" id="icon" class="icon" width="44"/></span>
-            <span class="conditions" id="description"></span>
-            <div class="row"><span class="col">
-            <span id="humidity" class="humidity"></span></span>
-            <span class="col">
-       <span id="wind" class="wind"></span></span>
-          </div></div></div>
-          </h3>
-            
-  
-    
-         
-     
-  
-  </div>
-        <br />
-      
-          <div class="five-day">
-          <div id="grid" class="forecasting"></div>
+            <button
+              class="btn btn-outline-secondary location"
+              id="your-location"
+              type="button"
+            >
+              📍Your location
+            </button>
           </div>
+        </form>
+      </div>
+      <section class="main">
+        <div class="current">
+          <h2></h2>
+
+          <h3>
+            <div>
+              <span class="right">
+                <strong class="temperature" id="temp"></strong
+              ></span>
+              <span class="units">°F </span>
+            </div>
+
+            <div class="weather-info">
+              <span class="pic">
+                <img src="" id="icon" class="icon" width="44"
+              /></span>
+              <span class="conditions" id="description"></span>
+              <div class="row">
+                <span class="col">
+                  <span id="humidity" class="humidity"></span
+                ></span>
+                <span class="col"> <span id="wind" class="wind"></span></span>
+              </div>
+            </div>
+          </h3>
         </div>
-        
+
+        <br />
+
+        <div class="five-day">
+          <div id="grid" class="forecasting"></div>
+        </div>
+      </section>
+
       <section class="bottom">
         <center>
           <a href="https://github.com/wwc3/Weather-App" target="_blank"
@@ -113,7 +103,7 @@
         </center>
       </section>
     </div>
-  </section>
+
     <script src="src/script.js"></script>
   </body>
 </html>
