@@ -92,7 +92,7 @@ function displayWeatherCondition(response) {
 
   document.querySelector("#temp").innerHTML = `${Math.round(
     response.data.main.temp
-  )}° F`;
+  )}`;
 
   document.querySelector(
     "#humidity"
