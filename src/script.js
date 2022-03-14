@@ -3,6 +3,7 @@ function formatDate(date) {
   if (hours < 10) {
     hours = `0${hours}`;
   }
+
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -122,6 +123,7 @@ function searchCity(city) {
 function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#user-answer").value.trim().toUpperCase();
+
   if (city === "") {
     alert("Please enter a city!");
   } else {
@@ -157,6 +159,4 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#your-location");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("Salt Lake City");
-
-//bug - default link when doing multiple searches is not F; if C is clicked on, that will still be active when changing cities
+searchCity("Washington D.C.");

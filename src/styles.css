@@ -35,7 +35,7 @@ h1 {
 
 h2 {
   color: white;
-  font-size: 37px;
+  font-size: 35px;
   padding: 3px;
   color: white;
   margin: 0 auto;
@@ -46,6 +46,12 @@ h4 {
   color: white;
   font-size: 18px;
   margin-bottom: 18px;
+}
+
+h5 {
+  color: white;
+  font-size: 11px;
+  text-align: center;
 }
 
 h6 {
