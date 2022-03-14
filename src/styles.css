@@ -59,7 +59,7 @@ h5 {
   border: 1px solid #226383;
   border-radius: 5px;
   box-shadow: 3px 4px 4px #226383;
-  max-width: 70px;
+  max-width: 50px;
   background: radial-gradient(
     circle at 10% 20%,
     rgb(149, 219, 254) 0%,
@@ -67,7 +67,7 @@ h5 {
   );
   display: block;
   margin: 0 auto;
-  padding: 6px;
+  padding: 5px;
 }
 
 .around:hover {
@@ -110,7 +110,7 @@ h5 {
   border-radius: 4px;
   margin: 0 auto;
   display: block;
-  max-width: 40px;
+  max-width: 38px;
 }
 
 .enter {
