@@ -96,10 +96,10 @@ function displayWeatherCondition(response) {
 
   document.querySelector(
     "#humidity"
-  ).innerHTML = `<span class="humidity-label">Humidity:</span> ${response.data.main.humidity}%`;
+  ).innerHTML = `<span class="humidity-label">😅Humidity:</span> ${response.data.main.humidity}%`;
   document.querySelector(
     "#wind"
-  ).innerHTML = `<span class="wind-label">Wind:</span> ${Math.round(
+  ).innerHTML = `<span class="wind-label">🎐Wind:</span> ${Math.round(
     response.data.wind.speed
   )} mph`;
   document.querySelector("#description").innerHTML =
