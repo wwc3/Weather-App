@@ -105,6 +105,11 @@ function displayWeatherCondition(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 
+  //let localUnixTimestamp = response.data.dt + response.data.timezone;
+  //document.querySelector("h6").innerHTML = currentDate(
+  //localUnixTimestamp * 1000
+  //);
+
   document
     .querySelector("#icon")
     .setAttribute(
@@ -149,7 +154,7 @@ function showFahrenheit(event) {
   temperature.innerHTML = Math.round(fahrenheitTemp);
 }
 
-let dateElement = document.querySelector("h6");
+let dateElement = document.querySelector("#day-time");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
